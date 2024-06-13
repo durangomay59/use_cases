@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>description</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 21:30:55</sys_created_on>
+        <sys_id>5798a09d97b6021039b7fc90f053afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Use Cases" source="x_1433874_use_case">9480e4d99772021039b7fc90f053af52</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Use Cases">9480e4d99772021039b7fc90f053af52</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5798a09d97b6021039b7fc90f053afb7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 21:30:55</sys_updated_on>
+        <table>x_1433874_use_case_task_extended</table>
+        <ui_policy display_value="Populate Description">43772c5597b6021039b7fc90f053af07</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=5798a09d97b6021039b7fc90f053afb7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Use Cases">9480e4d99772021039b7fc90f053af52</application>
+        <file_path/>
+        <instance_id>11ec09511bb2b914ba5ceb9b2d4bcbb1</instance_id>
+        <instance_name>dev226718</instance_name>
+        <name>sys_ui_policy_action_5798a09d97b6021039b7fc90f053afb7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>description</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-13 21:30:55</sys_created_on><sys_id>5798a09d97b6021039b7fc90f053afb7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>description</sys_name><sys_package display_value="Use Cases" source="x_1433874_use_case">9480e4d99772021039b7fc90f053af52</sys_package><sys_policy/><sys_scope display_value="Use Cases">9480e4d99772021039b7fc90f053af52</sys_scope><sys_update_name>sys_ui_policy_action_5798a09d97b6021039b7fc90f053afb7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-13 21:30:55</sys_updated_on><table>x_1433874_use_case_task_extended</table><ui_policy display_value="Populate Description">43772c5597b6021039b7fc90f053af07</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=5798a09d97b6021039b7fc90f053afb7"/></record_update>]]></payload>
+        <payload_hash>538268467</payload_hash>
+        <record_name>description</record_name>
+        <reverted_from/>
+        <source>0ab324919736021039b7fc90f053af96</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 21:30:55</sys_created_on>
+        <sys_id>35c8a49d97b6021039b7fc90f053af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1901382c48d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 21:30:55</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>39c8a49deab60210b6a53bc236393822</update_guid>
+        <update_guid_history>39c8a49deab60210b6a53bc236393822:538268467</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 21:31:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>a0b7ccdfb6ed43e48b848599baceed90</sys_id>
+        <sys_metadata>5798a09d97b6021039b7fc90f053afb7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Use Cases" source="x_1433874_use_case">9480e4d99772021039b7fc90f053af52</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Use Cases">9480e4d99772021039b7fc90f053af52</sys_scope>
+        <sys_scope_delete display_value="">5a2679f9e64047b39708102310857e59</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_5798a09d97b6021039b7fc90f053afb7</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_5798a09d97b6021039b7fc90f053afb7">35c8a49d97b6021039b7fc90f053af23</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 21:31:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

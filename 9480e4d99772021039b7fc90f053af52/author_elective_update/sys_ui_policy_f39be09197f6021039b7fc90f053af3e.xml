@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_1433874_use_case_task_extended">impactSAMEASpriority^EQ<item display_value="priority" endquery="false" field="impact" goto="false" newquery="false" operator="SAMEAS" or="false" value="priority"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+    var priority = g_form.getValue("priority");
+    var impact = g_form.getValue("impact");
+    //g_form.addErrorMessage(impact + " - " + priority );
+    if (priority != impact) {
+        g_form.addErrorMessage("was different" + impact + " - " + priority);
+        g_form.setValue("short_description", "");
+    }else{
+		g_form.addErrorMessage("was different" + impact + " - " + priority);
+	}
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    var priority = g_form.getValue("priority");
+    var impact = g_form.getValue("impact");
+	//g_form.addErrorMessage(impact+" - "+priority);
+    if (priority == impact) {
+		g_form.addErrorMessage("was same"+impact+" - "+priority);
+        g_form.setValue("short_description", "");
+    }else{
+		return false;
+	}
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Populate Short description</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 21:44:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f39be09197f6021039b7fc90f053af3e</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Populate Short description</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Use Cases" source="x_1433874_use_case">9480e4d99772021039b7fc90f053af52</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Use Cases">9480e4d99772021039b7fc90f053af52</sys_scope>
+        <sys_update_name>sys_ui_policy_f39be09197f6021039b7fc90f053af3e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 23:10:19</sys_updated_on>
+        <table>x_1433874_use_case_task_extended</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Use Cases">9480e4d99772021039b7fc90f053af52</application>
+        <file_path/>
+        <instance_id>11ec09511bb2b914ba5ceb9b2d4bcbb1</instance_id>
+        <instance_name>dev226718</instance_name>
+        <name>sys_ui_policy_f39be09197f6021039b7fc90f053af3e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1433874_use_case_task_extended"&gt;impactSAMEASpriority^EQ&lt;item display_value="priority" endquery="false" field="impact" goto="false" newquery="false" operator="SAMEAS" or="false" value="priority"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+    var priority = g_form.getValue("priority");
+    var impact = g_form.getValue("impact");
+    //g_form.addErrorMessage(impact + " - " + priority );
+    if (priority != impact) {
+        g_form.addErrorMessage("was different" + impact + " - " + priority);
+        g_form.setValue("short_description", "");
+    }else{
+		g_form.addErrorMessage("was different" + impact + " - " + priority);
+	}
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+    var priority = g_form.getValue("priority");
+    var impact = g_form.getValue("impact");
+	//g_form.addErrorMessage(impact+" - "+priority);
+    if (priority == impact) {
+		g_form.addErrorMessage("was same"+impact+" - "+priority);
+        g_form.setValue("short_description", "");
+    }else{
+		return false;
+	}
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Populate Short description&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-13 21:44:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f39be09197f6021039b7fc90f053af3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;25&lt;/sys_mod_count&gt;&lt;sys_name&gt;Populate Short description&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Use Cases" source="x_1433874_use_case"&gt;9480e4d99772021039b7fc90f053af52&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Use Cases"&gt;9480e4d99772021039b7fc90f053af52&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_f39be09197f6021039b7fc90f053af3e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-13 23:10:19&lt;/sys_updated_on&gt;&lt;table&gt;x_1433874_use_case_task_extended&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>980306394</payload_hash>
+        <record_name>Populate Short description</record_name>
+        <reverted_from/>
+        <source>0ab324919736021039b7fc90f053af96</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 23:10:19</sys_created_on>
+        <sys_id>258f70d9973a021039b7fc90f053af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19013ddc3ba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 23:10:19</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>a98f70d9003a0210b5da44af65137008</update_guid>
+        <update_guid_history>a98f70d9003a0210b5da44af65137008:980306394,276fb0d91d3a0210e4bb39d75dedc69f:1984728946,482f30d9693a021062065102cc7e1f56:1249993776,981ff499813a0210bd817158b8252d2c:-2017938997,9beef899eb3a0210fce1e27864c1fd93:631476685,3bdeb499c03a021033825061b0e4e467:2066649133,74beb4998e3a0210885806a39b19ac5e:-1905421619,840e7059183a0210197e9c7d5e86ac8b:1678089832,e5fdb4594f3a0210ce5af617babd1786:-516299421,7dedf819283a02100466057ddd5d095d:1678089832,3bbd7cd5bf3a0210bc2afe1957adf535:-1681213080,117db819683a02102a458264d5bbe40b:934530946,612d7cd5ff3a0210cc08831a67034c08:-1959829700,d71d74d5143a021069721f05586f713c:592657911,6fdc74d5233a02101d75daed5c932d36:1791204569,477cb0953b3a021081c1988555e5d516:-2017511377,1cebb095173a0210a31912973bbf85c5:-1693261411,4bbbb4552f3a0210b79f50a54691c0fe:643217408,db9bfcdd6ef602101ec9a5e315d0cb83:132493082,9aa6789d78f60210f9585697792a808d:199568014,3d85789de7f60210ba0d4c6cfeac572c:-698680695,4961381519f602108cbcea47cf55404b:-795317553,ab2d24d1f7f60210f6ab3e01f248edb4:-747937783,10dca4d1bff6021050c40020d5de0121:2005304337,6f2c2c917cf60210f7fbf2de9cf6b5e2:-1158428539,5ffba051bcf60210922542aa858b3ffc:888353003</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 23:12:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>0d10de25d97e48708015b599fc384689</sys_id>
+        <sys_metadata>f39be09197f6021039b7fc90f053af3e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populate Short description</sys_name>
+        <sys_package display_value="Use Cases" source="x_1433874_use_case">9480e4d99772021039b7fc90f053af52</sys_package>
+        <sys_parent display_value="Task Extended">0c01e09197b2021039b7fc90f053af01</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Use Cases">9480e4d99772021039b7fc90f053af52</sys_scope>
+        <sys_scope_delete display_value="">5a2679f9e64047b39708102310857e59</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_f39be09197f6021039b7fc90f053af3e</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_f39be09197f6021039b7fc90f053af3e">258f70d9973a021039b7fc90f053af09</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 23:12:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
